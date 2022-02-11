@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+  .m-t {
+    margin-top: .5rem !important;
+    /*margin-top: .5rem !important;*/
+  }
+}
+
+.search-icon:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  cursor: pointer;
+}
