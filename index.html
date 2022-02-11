@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/bootstrap-icons.css">
 
+    <style type="text/css">
+    </style>
+
     <title>Covid GeoData</title>
   </head>
   <body>
@@ -39,8 +42,8 @@
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <h2>Escolha de países</h2>
-          <form>
-            <div class="input-group">
+          <form autocomplete="off">
+            <div class="input-group autocomplete">
               <input type="text" class="form-control" placeholder="Escolha um país..." id="country-search-comparation" aria-describedby="country-search-comparation">
               <span class="input-group-text search-icon" id="country-search-comparation-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
@@ -77,6 +80,7 @@
 
     <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="./js/loader.js"></script>
+    <script type="text/javascript" src="./js/autocomplete.js"></script>
 
     <script type="text/javascript">
       google.charts.load('current', {
@@ -149,7 +153,5 @@
         chart.draw(data, google.charts.Bar.convertOptions(options));
       }
     </script>
-
-
   </body>
 </html>
